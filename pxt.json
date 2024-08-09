@@ -1,0 +1,26 @@
+{
+    "name": "tof_ranger",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "v3": "*",
+        "matrix": "github:calliope-net/matrix#v0.4.5",
+        "vl53l1x-microbit": "github:martinclausen2/vl53l1x-calliope#1f8f4fba585187d83f3cbc8a2cd2d1f620d46a29"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "6.0.41",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "tsprj"
+}
