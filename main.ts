@@ -1,6 +1,9 @@
 let reading = 0
 let Entfernung = 0
+serial.redirectToUSB()
 VL53L1X.init()
+VL53L1X.setDistanceMode(VL53L1X.DistanceMode.Medium)
+VL53L1X.setMeasurementTimingBudget(80000)
 matrix.init(matrix.ePages.y64)
 basic.forever(function () {
 	
@@ -17,4 +20,5 @@ loops.everyInterval(100, function () {
     if (127 < reading) {
         reading = 0
     }
+    serial.writeString(VL53L1X.stringDistance())
 })

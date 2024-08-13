@@ -4,8 +4,8 @@
     "dependencies": {
         "core": "*",
         "v3": "*",
-        "matrix": "github:calliope-net/matrix#v0.4.5",
-        "vl53l1x-microbit": "github:martinclausen2/vl53l1x-calliope#1f8f4fba585187d83f3cbc8a2cd2d1f620d46a29"
+        "vl53l1x-calliopemini": "github:martinclausen2/vl53l1x-calliope#69273c4ce87d3bc9d958895c31153922df7b95fa",
+        "matrix": "github:martinclausen2/OLED-calliope#90de936cac341b05d71b1863736deed2a95ab38a"
     },
     "files": [
         "main.blocks",
@@ -22,5 +22,5 @@
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
